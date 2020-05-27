@@ -24,9 +24,9 @@ app.set('view engine','ejs');
 
 //app.listen(3000);
 app.get('/',(req,res)=>{
-    //res.send(`app is running on port ${PORT}`);
-    //res.json(data);
-res.render('pages/index');
+    var title = "Our Home Page";
+ 
+res.render('pages/index',{title:title});
 });
 app.listen(PORT,()=>{
 
