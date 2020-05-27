@@ -22,8 +22,8 @@ const PORT = 3000;
 
 //app.listen(3000);
 app.get('/',(req,res)=>{
-    res.send(`app is running on port ${PORT}`);
-
+    //res.send(`app is running on port ${PORT}`);
+    res.json(data);
 
 });
 app.listen(PORT,()=>{
