@@ -13,7 +13,7 @@ import data from './data/test.json';
 var app = express();
 const PORT = 3000;
 
-apt.set('view engine','ejs');
+app.set('view engine','ejs');
 
 
 
