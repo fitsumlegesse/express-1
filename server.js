@@ -13,6 +13,8 @@ import data from './data/test.json';
 var app = express();
 const PORT = 3000;
 
+apt.set('view engine','ejs');
+
 
 
 
@@ -23,8 +25,8 @@ const PORT = 3000;
 //app.listen(3000);
 app.get('/',(req,res)=>{
     //res.send(`app is running on port ${PORT}`);
-    res.json(data);
-
+    //res.json(data);
+res.render('pages/index');
 });
 app.listen(PORT,()=>{
 
